@@ -28,21 +28,21 @@ export function Header({ onQuizOpen }: HeaderProps) {
 
         {/* Десктоп меню */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#categories" className="text-[#1a1a1a] hover:text-[#0f5132] transition-colors">
+          <a href="#categories" className="text-[#1a1a1a] hover:text-[#dc2626] transition-colors">
             Ассортимент
           </a>
-          <a href="#popular" className="text-[#1a1a1a] hover:text-[#0f5132] transition-colors">
+          <a href="#popular" className="text-[#1a1a1a] hover:text-[#dc2626] transition-colors">
             Популярное
           </a>
-          <a href="#certificates" className="text-[#1a1a1a] hover:text-[#0f5132] transition-colors">
+          <a href="#certificates" className="text-[#1a1a1a] hover:text-[#dc2626] transition-colors">
             Сертификаты
           </a>
-          <a href="#contacts" className="text-[#1a1a1a] hover:text-[#0f5132] transition-colors">
+          <a href="#contacts" className="text-[#1a1a1a] hover:text-[#dc2626] transition-colors">
             Контакты
           </a>
           <button
             onClick={onQuizOpen}
-            className="px-6 py-2 bg-[#0f5132] text-white rounded-full hover:bg-[#0a3d24] transition-colors"
+            className="px-6 py-2 bg-[#dc2626] text-white rounded-full hover:bg-[#b91c1c] transition-colors"
           >
             Подобрать за 30 секунд
           </button>
@@ -58,7 +58,7 @@ export function Header({ onQuizOpen }: HeaderProps) {
                 onQuizOpen();
                 setMobileMenuOpen(false);
               }}
-              className="w-full py-3 bg-[#0f5132] text-white rounded-lg font-medium"
+              className="w-full py-3 bg-[#dc2626] text-white rounded-lg font-medium"
             >
               Подобрать за 30 секунд
             </button>

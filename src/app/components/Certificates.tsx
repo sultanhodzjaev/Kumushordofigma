@@ -26,15 +26,15 @@ export function Certificates() {
               key={cert.id}
               className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="w-16 h-16 mx-auto mb-4 bg-[#0f5132]/10 rounded-full flex items-center justify-center">
-                <Gift className="text-[#0f5132]" size={32} />
+              <div className="w-16 h-16 mx-auto mb-4 bg-[#dc2626]/10 rounded-full flex items-center justify-center">
+                <Gift className="text-[#dc2626]" size={32} />
               </div>
               <h3 className="text-2xl font-light text-[#1a1a1a] mb-4">
                 {cert.amount.toLocaleString('ru-RU')} сом
               </h3>
               <button
                 onClick={() => openWhatsApp(cert.amount)}
-                className="w-full py-3 bg-[#0f5132] text-white rounded-lg hover:bg-[#0a3d24] transition-colors font-medium"
+                className="w-full py-3 bg-[#dc2626] text-white rounded-lg hover:bg-[#b91c1c] transition-colors font-medium"
               >
                 Забронировать
               </button>

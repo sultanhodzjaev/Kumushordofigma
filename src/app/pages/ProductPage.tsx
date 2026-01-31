@@ -14,7 +14,7 @@ export function ProductPage() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-light text-[#1a1a1a] mb-4">Товар не найден</h2>
-          <Link to="/" className="text-[#0f5132] hover:underline">
+          <Link to="/" className="text-[#dc2626] hover:underline">
             Вернуться на главную
           </Link>
         </div>
@@ -39,7 +39,7 @@ export function ProductPage() {
       {/* Навигация */}
       <div className="sticky top-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a1a] hover:text-[#0f5132] transition-colors">
+          <Link to="/" className="inline-flex items-center gap-2 text-[#1a1a1a] hover:text-[#dc2626] transition-colors">
             <ArrowLeft size={20} />
             <span>Назад</span>
           </Link>
@@ -71,7 +71,7 @@ export function ProductPage() {
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
                     className={`flex-1 aspect-square rounded-lg overflow-hidden border-2 transition-colors ${
-                      index === currentImageIndex ? 'border-[#0f5132]' : 'border-transparent'
+                      index === currentImageIndex ? 'border-[#dc2626]' : 'border-transparent'
                     }`}
                   >
                     <img src={image} alt={`${product.name} ${index + 1}`} className="w-full h-full object-cover" />
@@ -104,7 +104,7 @@ export function ProductPage() {
             {/* Кнопка заказа */}
             <button
               onClick={openWhatsApp}
-              className="w-full md:w-auto px-8 py-4 bg-[#0f5132] text-white rounded-full hover:bg-[#0a3d24] transition-colors font-medium flex items-center justify-center gap-2"
+              className="w-full md:w-auto px-8 py-4 bg-[#dc2626] text-white rounded-full hover:bg-[#b91c1c] transition-colors font-medium flex items-center justify-center gap-2"
             >
               <MessageCircle size={20} />
               Заказать в WhatsApp
@@ -131,7 +131,7 @@ export function ProductPage() {
           </motion.div>
         </div>
 
-        {/* Похожие товары */}
+        {/* ��охожие товары */}
         {relatedProducts.length > 0 && (
           <div className="mt-16 md:mt-24">
             <h2 className="text-2xl md:text-3xl font-light text-[#1a1a1a] mb-8">
@@ -168,7 +168,7 @@ export function ProductPage() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200">
         <button
           onClick={openWhatsApp}
-          className="w-full py-4 bg-[#0f5132] text-white rounded-full hover:bg-[#0a3d24] transition-colors font-medium flex items-center justify-center gap-2"
+          className="w-full py-4 bg-[#dc2626] text-white rounded-full hover:bg-[#b91c1c] transition-colors font-medium flex items-center justify-center gap-2"
         >
           <MessageCircle size={20} />
           Заказать в WhatsApp

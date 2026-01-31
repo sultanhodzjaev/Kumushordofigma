@@ -85,7 +85,7 @@ export function Quiz({ isOpen, onClose }: QuizProps) {
                 <div
                   key={i}
                   className={`h-1 flex-1 rounded-full ${
-                    i <= step ? 'bg-[#0f5132]' : 'bg-gray-200'
+                    i <= step ? 'bg-[#dc2626]' : 'bg-gray-200'
                   }`}
                 />
               ))}
@@ -104,7 +104,7 @@ export function Quiz({ isOpen, onClose }: QuizProps) {
                   <button
                     key={option}
                     onClick={() => handleAnswer(option)}
-                    className="w-full py-4 px-6 border border-gray-200 rounded-xl hover:border-[#0f5132] hover:bg-[#0f5132]/5 transition-all text-left"
+                    className="w-full py-4 px-6 border border-gray-200 rounded-xl hover:border-[#dc2626] hover:bg-[#dc2626]/5 transition-all text-left"
                   >
                     {option}
                   </button>
@@ -132,14 +132,14 @@ export function Quiz({ isOpen, onClose }: QuizProps) {
 
               <button
                 onClick={openWhatsApp}
-                className="w-full py-4 bg-[#0f5132] text-white rounded-xl hover:bg-[#0a3d24] transition-colors font-medium"
+                className="w-full py-4 bg-[#dc2626] text-white rounded-xl hover:bg-[#b91c1c] transition-colors font-medium"
               >
                 Написать в WhatsApp и подобрать вместе
               </button>
 
               <button
                 onClick={handleReset}
-                className="w-full py-3 text-[#0f5132] hover:bg-[#0f5132]/5 rounded-xl transition-colors"
+                className="w-full py-3 text-[#dc2626] hover:bg-[#dc2626]/5 rounded-xl transition-colors"
               >
                 Пройти заново
               </button>

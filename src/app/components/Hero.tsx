@@ -17,13 +17,13 @@ export function Hero({ onQuizOpen }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <button
               onClick={onQuizOpen}
-              className="px-8 py-4 bg-[#0f5132] text-white rounded-full hover:bg-[#0a3d24] transition-colors font-medium"
+              className="px-8 py-4 bg-[#dc2626] text-white rounded-full hover:bg-[#b91c1c] transition-colors font-medium"
             >
               Подобрать за 30 секунд
             </button>
             <a
               href="#categories"
-              className="px-8 py-4 border border-gray-300 text-[#1a1a1a] rounded-full hover:border-[#0f5132] hover:text-[#0f5132] transition-colors font-medium"
+              className="px-8 py-4 border border-gray-300 text-[#1a1a1a] rounded-full hover:border-[#dc2626] hover:text-[#dc2626] transition-colors font-medium"
             >
               Ассортимент
             </a>

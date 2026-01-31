@@ -39,15 +39,15 @@ export function Contacts() {
           {/* Информация */}
           <div className="space-y-6">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#0f5132]/10 rounded-full flex items-center justify-center">
-                <MapPin className="text-[#0f5132]" size={24} />
+              <div className="flex-shrink-0 w-12 h-12 bg-[#dc2626]/10 rounded-full flex items-center justify-center">
+                <MapPin className="text-[#dc2626]" size={24} />
               </div>
               <div>
                 <h3 className="font-medium text-[#1a1a1a] mb-1">Адрес</h3>
                 <p className="text-gray-600">{address}</p>
                 <button
                   onClick={openMaps}
-                  className="text-[#0f5132] hover:underline mt-2 text-sm"
+                  className="text-[#dc2626] hover:underline mt-2 text-sm"
                 >
                   Построить маршрут
                 </button>
@@ -55,20 +55,20 @@ export function Contacts() {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#0f5132]/10 rounded-full flex items-center justify-center">
-                <Phone className="text-[#0f5132]" size={24} />
+              <div className="flex-shrink-0 w-12 h-12 bg-[#dc2626]/10 rounded-full flex items-center justify-center">
+                <Phone className="text-[#dc2626]" size={24} />
               </div>
               <div>
                 <h3 className="font-medium text-[#1a1a1a] mb-1">Телефон</h3>
-                <a href={`tel:${phone}`} className="text-gray-600 hover:text-[#0f5132]">
+                <a href={`tel:${phone}`} className="text-gray-600 hover:text-[#dc2626]">
                   {phone}
                 </a>
               </div>
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#0f5132]/10 rounded-full flex items-center justify-center">
-                <MessageCircle className="text-[#0f5132]" size={24} />
+              <div className="flex-shrink-0 w-12 h-12 bg-[#dc2626]/10 rounded-full flex items-center justify-center">
+                <MessageCircle className="text-[#dc2626]" size={24} />
               </div>
               <div>
                 <h3 className="font-medium text-[#1a1a1a] mb-1">WhatsApp</h3>
